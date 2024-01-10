@@ -1,0 +1,53 @@
+﻿<RxSettings>
+		<AccessType Value="Catheter" Units="" />
+		<CartridgeType Value="CAR-501" Units="" />
+		<DialysateLactate Value="40" Units="" />
+		<DialysatePotassium Value="1K" Units="" />
+		<DialysateSakType Value="SAK-305" Units="" />
+		<DialysateSource Value="PureFlow SL" Units="" />
+		<DialysateVolume Value="25.0" Units="L" />
+		<DryWeight Value="76.8" Units="kg" />
+		<FlowFraction Value="35" Units="%" />
+		<InitialBloodFlowRate Value="175" Units="ml/min" />
+		<NeedleGauge Value="15" Units="gauge" />
+		<TargetBloodFlowRate Value="260" Units="ml/min" />
+		<TargetDialysateRate Value="8.0" Units="L/hr" />
+		<TargetUltraFiltrationRate Value="120" Units="L/hr" />
+		<TreatmentsPerWeek Value="4.5" Units="" />
+		<Medications>
+			<Medication>
+				<Dosage Value="1000" Units="" />
+				<Name Value="Heparin" Units="" />
+				<RouteTaken Value="Access" Units="" />
+				<TimeTaken Value="-32768" Units="" />
+			</Medication>
+		</Medications>
+</RxSettings>
+
+<TxSettings>
+		<AttachmentsAllowed Value="Yes" Units="" />
+		<AutoLogoutTimeout Value="15" Units="min" />
+		<CellModemInUse Value="Unknown" Units="" />
+		<CenterPhoneNumber Value="1-555-321-5678" Units="" />
+		<ConfigurationCheck Value="1" Units="" />
+		<CyclerTxValueInterval Value="30" Units="min" />
+		<DisplayCenterPhoneNumber Value="Yes" Units="" />
+		<DisplayTechSupportPhoneNumber Value="Yes" Units="" />
+		<RemoteViewingAllowed Value="No" Units="" />
+		<RemoteViewingInterval Value="2" Units="sec" />
+		<MaxAttachmentsAllowed Value="10" Units="" />
+		<MaxDiastolicPressure Value="90" Units="mmHg" />
+		<MaxSystolicPressure Value="190" Units="mmHg" />
+		<MaxTemperature Value="104.0" Units="F" />
+		<MinDiastolicPressure Value="40" Units="mmHg" />
+		<MinSystolicPressure Value="90" Units="mmHg" />
+		<PatientCanEditDryWeight Value="Yes" Units="" />
+		<PatientVitalsPromptInterval Value="30" Units="min" />
+		<PostTxAssessmentType Value="Full" Units="" />
+		<PreTxAssessmentType Value="Full" Units="" />
+		<ShowMedicationsAdministeredEntry Value="Yes" Units="" />
+		<ShowYellowInfoCaution Value="Yes" Units="" />
+		<SupportedPlatforms Value="NULL" Units="" />
+		<TechSupportPhoneNumber Value="1-866-697-8243" Units="" />
+		<TemperatureUnits Value="Fahrenheit" Units="" />
+</TxSettings>

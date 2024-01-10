@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TP2186_Automation">
+<!-- listeners>
+	<listener class-name="com.cs.ns.ClinicianPortal_Automation.Base_class.BaseClass"></listener>	
+</listeners-->
+
+ 	<test name="Automation tests...">
+ 	
+    	<classes>
+        	<!-- class name="com.cs.ns.ClinicianPortal_Automation.Qa.TP2186.CP_UIVerification"></class-->
+        	<class name="com.cs.ns.ClinicianPortal_Automation.Qa.TP2186.FunctionalityVerification"></class>
+        	<!-- class name="com.cs.ns.ClinicianPortal_Automation.Qa.TP2186.TP2186_FlowsheetStatistics"></class-->
+        	<!-- class name="com.cs.ns.ClinicianPortal_Automation.Qa.TP2186.RunAllModules"></class-->
+    	</classes>
+	</test>
+</suite> <!-- Suite -->

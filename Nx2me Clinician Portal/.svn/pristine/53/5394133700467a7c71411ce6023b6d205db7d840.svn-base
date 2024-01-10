@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CreateFlowsheetV2 xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<FlowsheetId />
+	<FlowsheetVersion>7</FlowsheetVersion>
+	<Confirmed>True</Confirmed>
+	<PatientId>550015</PatientId>
+	<CenterId>5501</CenterId>
+	<TreatmentDate>${NowUtc}</TreatmentDate>
+	<NumberFlowsheets>5</NumberFlowsheets>
+	<TxId>1</TxId>
+	<ReceiveTimeOffset>0</ReceiveTimeOffset>
+	<TreatmentDaysOfWeek>Su,Mo,Tu,We,Th,Fr,Sa</TreatmentDaysOfWeek>
+	<RxSettingsFile>C:\SQA\TP2186\Test_Data\RxSettingsSection.txt</RxSettingsFile>
+	<PreTxAssessmentFile>${Default}</PreTxAssessmentFile>
+	<PreTxDataFile>${Default}</PreTxDataFile>
+	<TxDataFile>C:\SQA\TP2186\Test_Data\TxDataSection.txt</TxDataFile>
+	<PostTxAssessmentFile>${Default}</PostTxAssessmentFile>
+	<MaintenanceDataFile>${Default}</MaintenanceDataFile>
+	<EquipmentDataFile>${Default}</EquipmentDataFile>
+	<ReasonForWeightOverrideFile />
+	<PreTxCommentFile>C:\SQA\TP2186\Test_Data\PreTxCommentsFile.txt</PreTxCommentFile>
+	<AttachmentsFile>C:\SQA\TP2186\Test_Data\MyAttachments.txt</AttachmentsFile>
+	<TxCommentFile />
+	<PostTxCommentFile />
+	<OutputDirectory>C:\SQA\Flowsheets</OutputDirectory>
+	<Validate>True</Validate>
+	<RandomizeSortFields>False</RandomizeSortFields>
+	<NullifySortFields>False</NullifySortFields>
+	<RandomizeTxDate>True</RandomizeTxDate>
+
+</CreateFlowsheetV2>
+<!--
+Task Name: CreateFlowsheetFromFilesTask
+Task Purpose: Creates a new Flowsheet using the given properties and saves it to file using the DD0241 file naming convention.
+
+Design Note: Special Characters in the free-form text fields in the corresponding Flowsheet Section Xml files, i.e., ReasonForWeightOverride,
+Pre-Tx Comment, Post-Tx Comment and Tx Comment must be encoded as Html Entities.
+
+For a complete reference of all character entities, visit http://www.w3schools.com/tags/ref_entities.asp.
+
+Some commonly used Html Entities include:
+1. Less Than (&lt;) as &amp;lt;
+2. Greater Than (&gt;) as &amp;gt;
+3. Ampersand (&amp;) as &amp;amp;
+4. Double Quote (") as &amp;quot;
+5. Apostrophe (') as &amp;apos;
+6. Copyright (©) as &amp;copy;
+7. Trademark (™) as &amp;trade;
+
+Task Iterations: 1
+Property:
+	Name: CenterId
+	Intended Use: If present, the value used for the CenterId in the Flowsheet RxSettings section data.
+	Possible Values: The empty string or a valid Center ID string.
+Property:
+	Name: PatientId
+	Intended Use: If present, used for the MRN in the Flowsheet RxSettings data.
+	Possible Values: The empty string or a valid Patient ID string.
+Property:
+	Name: FlowsheetId
+	Intended Use: If the value is missing, the empty string or 00000000-0000-0000-0000-000000000000 a new GUID will be generated else the given GUID will be used.
+	Possible Values: Empty string, Empty Guid, i.e., 00000000-0000-0000-0000-000000000000 or a valid GUID. Default is the Empty Guid.
+Property:
+	Name: FlowsheetVersion
+	Intended Use: The optional value used for the Flowsheet version in the Flowsheet data. No version format validation is performed. Default is 7. 
+	Possible Values: The empty string, missing or any integer value greater then or equal to 0. Only 4, 5, 6, or 7 will result in a successful Flowsheet import.
+Property:
+	Name: Confirmed
+	Intended Use: A value of False means PatientConfirmationTime in the Flowsheet will be 0 else it will be an integer based on the Treatment Date data value.
+	Possible Values: True or False.
+Property:
+	Name: TreatmentDate
+	Intended Use: If present, the Treatment Date / Time (UTC) used for the Tx Start Time in the Flowsheet Tx Data section data.
+		All treatment and Flowsheet related times will be adjusted based on the difference between this value and the existing Treatment Start Date.
+	Possible Values: The Empty string, ${NowUtc} or a valid UTC Date in the format: MM/dd/yyyy or MM/dd/yyyy hh:mm. If the hh:mm is missing or 00:00, they are set to 09:15.
+Property:
+	Name: NumberFlowsheets
+	Intended Use: The number of Flowsheets to generate for this Patient / Center. Starts at given Treatment Date and goes backwards for each generated Flowsheet.
+		Any value less than or equal to 1 is treated as 1. Defaults to 1.
+	Possible Values: Any integer greater than or equal to 1.
+Property:
+	Name: TxId
+	Intended Use: If present and if greater than zero (0), used in the Flowsheet Tx Data section for the Treatment Id, if greater than zero (0).
+	Possible Values: Any integer greater than or equal to one. Defaults to 1.
+Property:
+	Name: ReceiveTimeOffset
+	Intended Use: If greater than zero (0), the minimum number of hours after the calculated treatment end time used to set the desired Flowsheet Receive Date / Time upon import.
+	Possible Values: Any integer greater than or equal to zero (0). Default is 0. If less than or equal to zero (0), means the offset is not used during Flowsheet import processing.
+Property:
+	Name: TreatmentDaysOfWeek
+	Intended Use: The days of the week treatments are performed.
+	Possible Values: The empty string, or a case-insensitive comma separated list of the first 2 letters of the day to treat on, i.e., every other day might look like Su,Tu,Th,Sa. Default is Sun-Sat, i.e., Su,Mo,Tu,We,Th,Fr,Sa.
+Property:
+	Name: RxSettingsFile
+	Intended Use: The optional fully qualified file name containing the Rx Settings XML section to be added.
+		If present, the file must exist and contain non-whitespace contents to be valid.
+	Possible Values: Any valid full path or ${Default} to indicate use of the default section file.
+Property:
+	Name: PreTxAssessmentFile
+	Intended Use: The optional fully qualified file name containing the Pre-Treatment Assessment XML section to be added.
+		If present, the file must exist and contain non-whitespace contents to be valid.
+	Possible Values: Any valid full path or ${Default} to indicate use of the default section file.
+Property:
+	Name: PreTxDataFile
+	Intended Use: The optional fully qualified file name containing the Pre-Treatment Data XML section to be added.
+		If present, the file must exist and contain non-whitespace contents to be valid.
+	Possible Values: Any valid full path or ${Default} to indicate use of the default section file.
+Property:
+	Name: TxDataFile
+	Intended Use: The mandatory fully qualified file name containing the Treatment Data XML section to be added.
+		If present, the file must exist and contain non-whitespace contents to be valid.
+	Possible Values: Any valid full path or ${Default} to indicate use of the default section file.
+Property:
+	Name: PostTxAssessmentFile
+	Intended Use: The optional fully qualified file name containing the Post-Treatment Assessment Xml section to be added.
+		If present, the file must exist and contain non-whitespace contents to be valid.
+	Possible Values: Any valid full path or ${Default} to indicate use of the default section file.
+Property:
+	Name: MaintenanceDataFile
+	Intended Use: The optional fully qualified file name containing the Maintenance Data Xml section to be added.
+		If present, the file must exist and contain non-whitespace contents to be valid.
+	Possible Values: Any valid full path or ${Default} to indicate use of the default section file.
+Property:
+	Name: EquipmentDataFile
+	Intended Use: The optional fully qualified file name containing the Equipment Data Xml section to be added.
+		If present, the file must exist and contain non-whitespace contents to be valid.
+	Possible Values: Any valid full path or ${Default} to indicate use of the default section file.
+Property:
+	Name: ReasonForWeightOverrideFile
+	Intended Use: The optional fully qualified file name containing the  Reason For Weight Override comment to be added.
+		If present, the file must exist and contain non-whitespace contents to be valid.
+	Possible Values: Any valid full path.
+Property:
+	Name: PreTxCommentFile
+	Intended Use: The optional fully qualified file name containing the Pre-Treatment comment to be substituted in the PreTxAssesment section.
+		If present, the file must exist and contain non-whitespace contents and there must be a valid Comment in the PreTxAssessmentFile to successfully create a Flowsheet.
+	Possible Values: Any valid full path.
+Property:
+	Name: TxCommentFile
+	Intended Use: The optional fully qualified file name containing the Treatment comment to be substituted for each Comment in the TxData section.
+		If present, the file must exist and contain non-whitespace contents and there must be at least one valid Comment in the TxDateFile to successfully create a Flowsheet.
+	Possible Values: Any valid full path.
+Property:
+	Name: PostTxCommentFile
+	Intended Use: The optional fully qualified file name containing the Post-Treatment comment to be substituted in the PostTxAssesment section.
+		If present, the file must exist and contain non-whitespace contents and there must be a valid Comment in the PostTxAssessmentFile to successfully create a Flowsheet.
+	Possible Values: Any valid full path.
+Property:
+	Name: AttachmentsFile
+	Intended Use: The optional fully qualified file name containing the Attachments XML to be added to defined comments.
+		If present, the file must exist and contain properly formatted XML.
+	Possible Values: Any valid full path.
+Property:
+	Name: OutputDirectory
+	Intended Use: The optional output directory for saving the generated Flowsheet.
+		Defaults to the Flowsheets directory under the Current Working Directory.
+	Possible Values: The empty string or a valid path.
+Property:
+	Name: Validate
+	Intended Use: A value of False means do *not* validate the properties and generate the Flowsheet using the given data. Defaults to True.
+	Possible Values: True or False.
+Property:
+	Name: RandomizeSortFields
+	Intended Use: A value of True means do add a small random variance to the non-RX fields used for sorting in the RN Dashboard. Defaults to False.
+	Possible Values: The empty string, True or False.
+Property:
+	Name: NullifySortFields
+	Intended Use: A value of True means to randomly set the fields used for sorting in the RN Dashboard to *NULL* or their uninitialized values. Defaults to False.
+	Possible Values: The empty string, True or False.
+Property:
+	Name: RandomizeTxDate
+	Intended Use: A value of True means do add a small random variance to the Tx Date. Defaults to True.
+	Possible Values: The empty string, True or False.
+
+-->

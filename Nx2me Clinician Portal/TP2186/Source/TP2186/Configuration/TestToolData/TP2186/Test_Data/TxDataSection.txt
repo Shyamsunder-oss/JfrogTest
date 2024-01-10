@@ -1,0 +1,290 @@
+﻿<TreatmentData>
+	  <BloodVolumeProcessed Value="77.8" Units="L" />
+	  <DialysateVolumeConsumed Value="30.0" Units="L" />
+	  <EndTime Value="-32768" Units="" />
+	  <SalineVolumeAdministered Value="50" Units="mL" />
+	  <StartTime Value="1355244941" Units="" />
+	  <TotalTime Value="156" Units="min" />
+	  <TxId Value="2096" Units="" />
+	  <UltraFiltrationVolumeProcessed Value="1.0" Units="L" />
+	  <VpAt200Bfr Value="-32768" Units="mmHg" />
+	  <Comments>
+	  </Comments>
+	  <Medications>
+		<Medication>
+		  <Dosage Value="300" Units="" />
+		  <Name Value="Heparin" Units="" />
+		  <RouteTaken Value="Via Cartridge" Units="" />
+		  <TimeTaken Value="1355250407" Units="" />
+		</Medication>
+		<Medication>
+		  <Dosage Value="100" Units="" />
+		  <Name Value="EPO" Units="" />
+		  <RouteTaken Value="Via Cartridge" Units="" />
+		  <TimeTaken Value="1355255764" Units="" />
+		</Medication>
+	  </Medications>
+	  <CyclerDataSnapshots>
+		<CyclerDataSnapshot>
+		  <ArterialPressure Value="-205" Units="mmHg" />
+		  <BloodFlowRate Value="500.000" Units="ml/min" />
+		  <BloodVolumeProcessed Value="38.557" Units="L" />
+		  <DialysateRate Value="11.460" Units="L/hr" />
+		  <DialysateVolumeConsumed Value="14.689" Units="L" />
+		  <DialysateVolumeRemaining Value="15.311" Units="L" />
+		  <EffluentPressure Value="177" Units="mmHg" />
+		  <TimeTaken Value="1355250473" Units="" />
+		  <UltraFiltrationRate Value="0.500" Units="L/hr" />
+		  <UltraFiltrationVolumeProcessed Value="0.647" Units="L" />
+		  <UltraFiltrationVolumeRemaining Value="0.352" Units="L" />
+		  <VenousPressure Value="157" Units="mmHg" />
+		  <SnapshotReason Value="0" Units="" />
+		  <DisplayedCautionOrAlarm Value="-32768" Units="" />
+		  <TxPhase Value="2" Units="" />
+		</CyclerDataSnapshot>
+		<CyclerDataSnapshot>
+		  <ArterialPressure Value="-278" Units="mmHg" />
+		  <BloodFlowRate Value="500.000" Units="ml/min" />
+		  <BloodVolumeProcessed Value="2.127" Units="L" />
+		  <DialysateRate Value="11.460" Units="L/hr" />
+		  <DialysateVolumeConsumed Value="0.777" Units="L" />
+		  <DialysateVolumeRemaining Value="29.222" Units="L" />
+		  <EffluentPressure Value="158" Units="mmHg" />
+		  <TimeTaken Value="1355245287" Units="" />
+		  <UltraFiltrationRate Value="0.500" Units="L/hr" />
+		  <UltraFiltrationVolumeProcessed Value="0.042" Units="L" />
+		  <UltraFiltrationVolumeRemaining Value="0.957" Units="L" />
+		  <VenousPressure Value="160" Units="mmHg" />
+		  <SnapshotReason Value="0" Units="" />
+		  <DisplayedCautionOrAlarm Value="-32768" Units="" />
+		  <TxPhase Value="2" Units="" />
+		</CyclerDataSnapshot>
+		<CyclerDataSnapshot>
+		  <ArterialPressure Value="-278" Units="mmHg" />
+		  <BloodFlowRate Value="500.000" Units="ml/min" />
+		  <BloodVolumeProcessed Value="2.127" Units="L" />
+		  <DialysateRate Value="11.460" Units="L/hr" />
+		  <DialysateVolumeConsumed Value="0.777" Units="L" />
+		  <DialysateVolumeRemaining Value="29.222" Units="L" />
+		  <EffluentPressure Value="158" Units="mmHg" />
+		  <TimeTaken Value="1355261010" Units="" />
+		  <UltraFiltrationRate Value="0.500" Units="L/hr" />
+		  <UltraFiltrationVolumeProcessed Value="0.042" Units="L" />
+		  <UltraFiltrationVolumeRemaining Value="0.957" Units="L" />
+		  <VenousPressure Value="160" Units="mmHg" />
+		  <SnapshotReason Value="1" Units="" />
+		  <DisplayedCautionOrAlarm Value="25" Units="" />
+		  <TxPhase Value="2" Units="" />
+		</CyclerDataSnapshot>
+		<CyclerDataSnapshot>
+		  <ArterialPressure Value="-278" Units="mmHg" />
+		  <BloodFlowRate Value="500.000" Units="ml/min" />
+		  <BloodVolumeProcessed Value="2.127" Units="L" />
+		  <DialysateRate Value="11.460" Units="L/hr" />
+		  <DialysateVolumeConsumed Value="0.777" Units="L" />
+		  <DialysateVolumeRemaining Value="29.222" Units="L" />
+		  <EffluentPressure Value="158" Units="mmHg" />
+		  <TimeTaken Value="1355246510" Units="" />
+		  <UltraFiltrationRate Value="0.500" Units="L/hr" />
+		  <UltraFiltrationVolumeProcessed Value="0.042" Units="L" />
+		  <UltraFiltrationVolumeRemaining Value="0.957" Units="L" />
+		  <VenousPressure Value="160" Units="mmHg" />
+		  <SnapshotReason Value="2" Units="" />
+		  <DisplayedCautionOrAlarm Value="24" Units="" />
+		  <TxPhase Value="2" Units="" />
+		</CyclerDataSnapshot>
+		<CyclerDataSnapshot>
+		  <ArterialPressure Value="-266" Units="mmHg" />
+		  <BloodFlowRate Value="500.000" Units="ml/min" />
+		  <BloodVolumeProcessed Value="11.702" Units="L" />
+		  <DialysateRate Value="11.460" Units="L/hr" />
+		  <DialysateVolumeConsumed Value="4.415" Units="L" />
+		  <DialysateVolumeRemaining Value="25.584" Units="L" />
+		  <EffluentPressure Value="147" Units="mmHg" />
+		  <TimeTaken Value="1355246741" Units="" />
+		  <UltraFiltrationRate Value="0.500" Units="L/hr" />
+		  <UltraFiltrationVolumeProcessed Value="0.201" Units="L" />
+		  <UltraFiltrationVolumeRemaining Value="0.798" Units="L" />
+		  <VenousPressure Value="139" Units="mmHg" />
+		  <SnapshotReason Value="0" Units="" />
+		  <DisplayedCautionOrAlarm Value="-32768" Units="" />
+		  <TxPhase Value="2" Units="" />
+		</CyclerDataSnapshot>
+		<CyclerDataSnapshot>
+		  <ArterialPressure Value="-211" Units="mmHg" />
+		  <BloodFlowRate Value="500.000" Units="ml/min" />
+		  <BloodVolumeProcessed Value="24.581" Units="L" />
+		  <DialysateRate Value="11.460" Units="L/hr" />
+		  <DialysateVolumeConsumed Value="9.342" Units="L" />
+		  <DialysateVolumeRemaining Value="20.657" Units="L" />
+		  <EffluentPressure Value="158" Units="mmHg" />
+		  <TimeTaken Value="1355248542" Units="" />
+		  <UltraFiltrationRate Value="0.500" Units="L/hr" />
+		  <UltraFiltrationVolumeProcessed Value="0.415" Units="L" />
+		  <UltraFiltrationVolumeRemaining Value="0.584" Units="L" />
+		  <VenousPressure Value="150" Units="mmHg" />
+		  <SnapshotReason Value="0" Units="" />
+		  <DisplayedCautionOrAlarm Value="-32768" Units="" />
+		  <TxPhase Value="2" Units="" />
+		</CyclerDataSnapshot>
+		<CyclerDataSnapshot>
+		  <ArterialPressure Value="-212" Units="mmHg" />
+		  <BloodFlowRate Value="500.000" Units="ml/min" />
+		  <BloodVolumeProcessed Value="51.640" Units="L" />
+		  <DialysateRate Value="11.460" Units="L/hr" />
+		  <DialysateVolumeConsumed Value="19.704" Units="L" />
+		  <DialysateVolumeRemaining Value="10.295" Units="L" />
+		  <EffluentPressure Value="158" Units="mmHg" />
+		  <TimeTaken Value="1355252142" Units="" />
+		  <UltraFiltrationRate Value="0.500" Units="L/hr" />
+		  <UltraFiltrationVolumeProcessed Value="0.865" Units="L" />
+		  <UltraFiltrationVolumeRemaining Value="0.134" Units="L" />
+		  <VenousPressure Value="148" Units="mmHg" />
+		  <SnapshotReason Value="0" Units="" />
+		  <DisplayedCautionOrAlarm Value="-32768" Units="" />
+		  <TxPhase Value="2" Units="" />
+		</CyclerDataSnapshot>
+		<CyclerDataSnapshot>
+		  <ArterialPressure Value="-207" Units="mmHg" />
+		  <BloodFlowRate Value="500.000" Units="ml/min" />
+		  <BloodVolumeProcessed Value="77.848" Units="L" />
+		  <DialysateRate Value="0.000" Units="L/hr" />
+		  <DialysateVolumeConsumed Value="30.000" Units="L" />
+		  <DialysateVolumeRemaining Value="0.000" Units="L" />
+		  <EffluentPressure Value="140" Units="mmHg" />
+		  <TimeTaken Value="1355255858" Units="" />
+		  <UltraFiltrationRate Value="0.000" Units="L/hr" />
+		  <UltraFiltrationVolumeProcessed Value="1.000" Units="L" />
+		  <UltraFiltrationVolumeRemaining Value="0.000" Units="L" />
+		  <VenousPressure Value="134" Units="mmHg" />
+		  <SnapshotReason Value="0" Units="" />
+		  <DisplayedCautionOrAlarm Value="-32768" Units="" />
+		  <TxPhase Value="2" Units="" />
+		</CyclerDataSnapshot>
+		<CyclerDataSnapshot>
+		  <ArterialPressure Value="-278" Units="mmHg" />
+		  <BloodFlowRate Value="500.000" Units="ml/min" />
+		  <BloodVolumeProcessed Value="2.127" Units="L" />
+		  <DialysateRate Value="11.460" Units="L/hr" />
+		  <DialysateVolumeConsumed Value="0.777" Units="L" />
+		  <DialysateVolumeRemaining Value="29.222" Units="L" />
+		  <EffluentPressure Value="158" Units="mmHg" />
+		  <TimeTaken Value="1355261010" Units="" />
+		  <UltraFiltrationRate Value="0.500" Units="L/hr" />
+		  <UltraFiltrationVolumeProcessed Value="0.042" Units="L" />
+		  <UltraFiltrationVolumeRemaining Value="0.957" Units="L" />
+		  <VenousPressure Value="160" Units="mmHg" />
+		  <SnapshotReason Value="1" Units="" />
+		  <DisplayedCautionOrAlarm Value="25" Units="" />
+		  <TxPhase Value="2" Units="" />
+		</CyclerDataSnapshot>
+		<CyclerDataSnapshot>
+		  <ArterialPressure Value="-278" Units="mmHg" />
+		  <BloodFlowRate Value="500.000" Units="ml/min" />
+		  <BloodVolumeProcessed Value="2.127" Units="L" />
+		  <DialysateRate Value="11.460" Units="L/hr" />
+		  <DialysateVolumeConsumed Value="0.777" Units="L" />
+		  <DialysateVolumeRemaining Value="29.222" Units="L" />
+		  <EffluentPressure Value="158" Units="mmHg" />
+		  <TimeTaken Value="1355213010" Units="" />
+		  <UltraFiltrationRate Value="0.500" Units="L/hr" />
+		  <UltraFiltrationVolumeProcessed Value="0.042" Units="L" />
+		  <UltraFiltrationVolumeRemaining Value="0.957" Units="L" />
+		  <VenousPressure Value="160" Units="mmHg" />
+		  <SnapshotReason Value="2" Units="" />
+		  <DisplayedCautionOrAlarm Value="14" Units="" />
+		  <TxPhase Value="2" Units="" />
+		</CyclerDataSnapshot>
+		<CyclerDataSnapshot>
+		  <ArterialPressure Value="-209" Units="mmHg" />
+		  <BloodFlowRate Value="500.000" Units="ml/min" />
+		  <BloodVolumeProcessed Value="63.945" Units="L" />
+		  <DialysateRate Value="12.000" Units="L/hr" />
+		  <DialysateVolumeConsumed Value="24.452" Units="L" />
+		  <DialysateVolumeRemaining Value="5.547" Units="L" />
+		  <EffluentPressure Value="163" Units="mmHg" />
+		  <TimeTaken Value="1355253942" Units="" />
+		  <UltraFiltrationRate Value="0.000" Units="L/hr" />
+		  <UltraFiltrationVolumeProcessed Value="1.000" Units="L" />
+		  <UltraFiltrationVolumeRemaining Value="0.000" Units="L" />
+		  <VenousPressure Value="149" Units="mmHg" />
+		  <SnapshotReason Value="0" Units="" />
+		  <DisplayedCautionOrAlarm Value="-32768" Units="" />
+		  <TxPhase Value="2" Units="" />
+		</CyclerDataSnapshot>
+		<CyclerDataSnapshot>
+		  <ArterialPressure Value="-211" Units="mmHg" />
+		  <BloodFlowRate Value="500.000" Units="ml/min" />
+		  <BloodVolumeProcessed Value="76.930" Units="L" />
+		  <DialysateRate Value="12.000" Units="L/hr" />
+		  <DialysateVolumeConsumed Value="29.635" Units="L" />
+		  <DialysateVolumeRemaining Value="0.364" Units="L" />
+		  <EffluentPressure Value="155" Units="mmHg" />
+		  <TimeTaken Value="1355255742" Units="" />
+		  <UltraFiltrationRate Value="0.000" Units="L/hr" />
+		  <UltraFiltrationVolumeProcessed Value="1.000" Units="L" />
+		  <UltraFiltrationVolumeRemaining Value="0.000" Units="L" />
+		  <VenousPressure Value="141" Units="mmHg" />
+		  <SnapshotReason Value="0" Units="" />
+		  <DisplayedCautionOrAlarm Value="-32768" Units="" />
+		  <TxPhase Value="2" Units="" />
+		</CyclerDataSnapshot>
+	  </CyclerDataSnapshots>
+	  <PatientVitalsSnapshots>
+		<PatientVitalsSnapshot>
+		  <AccessCondition Value="Good" Units="" />
+		  <DiastolicPressure Value="80" Units="mmHg" />
+		  <PulseRate Value="70" Units="bpm" />
+		  <SalineVolumeAdministered Value="0" Units="ml" />
+		  <SystolicPressure Value="120" Units="mmHg" />
+		  <TimeTaken Value="1355248577" Units="" />
+		  <TakenWhileSeated Value="Yes" Units="" />
+		  <BloodPressureSource Value="0" Units="" />
+		  <PulseRateSource Value="0" Units="" />
+		</PatientVitalsSnapshot>
+		<PatientVitalsSnapshot>
+		  <AccessCondition Value="Good" Units="" />
+		  <DiastolicPressure Value="80" Units="mmHg" />
+		  <PulseRate Value="70" Units="bpm" />
+		  <SalineVolumeAdministered Value="0" Units="ml" />
+		  <SystolicPressure Value="120" Units="mmHg" />
+		  <TimeTaken Value="1355246949" Units="" />
+		  <TakenWhileSeated Value="Yes" Units="" />
+		  <BloodPressureSource Value="0" Units="" />
+		  <PulseRateSource Value="0" Units="" />
+		</PatientVitalsSnapshot>
+		<PatientVitalsSnapshot>
+		  <AccessCondition Value="Good" Units="" />
+		  <DiastolicPressure Value="80" Units="mmHg" />
+		  <PulseRate Value="70" Units="bpm" />
+		  <SalineVolumeAdministered Value="50" Units="ml" />
+		  <SystolicPressure Value="120" Units="mmHg" />
+		  <TimeTaken Value="1355255749" Units="" />
+		  <TakenWhileSeated Value="Yes" Units="" />
+		  <BloodPressureSource Value="0" Units="" />
+		  <PulseRateSource Value="0" Units="" />
+		</PatientVitalsSnapshot>
+		<PatientVitalsSnapshot>
+		  <AccessCondition Value="Good" Units="" />
+		  <DiastolicPressure Value="80" Units="mmHg" />
+		  <PulseRate Value="70" Units="bpm" />
+		  <SalineVolumeAdministered Value="0" Units="ml" />
+		  <SystolicPressure Value="120" Units="mmHg" />
+		  <TimeTaken Value="1355250353" Units="" />
+		  <TakenWhileSeated Value="Yes" Units="" />
+		  <BloodPressureSource Value="0" Units="" />
+		  <PulseRateSource Value="0" Units="" />
+		</PatientVitalsSnapshot>
+		<PatientVitalsSnapshot>
+		  <AccessCondition Value="Good" Units="" />
+		  <DiastolicPressure Value="80" Units="mmHg" />
+		  <PulseRate Value="70" Units="bpm" />
+		  <SalineVolumeAdministered Value="0" Units="ml" />
+		  <SystolicPressure Value="120" Units="mmHg" />
+		  <TimeTaken Value="1355252158" Units="" />
+		  <TakenWhileSeated Value="Yes" Units="" />
+		  <BloodPressureSource Value="0" Units="" />
+		  <PulseRateSource Value="0" Units="" />
+		</PatientVitalsSnapshot>
+	  </PatientVitalsSnapshots>
+	</TreatmentData>

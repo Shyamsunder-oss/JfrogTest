@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UploadAttachment xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <UploadDirectory>C:\SQA\Flowsheets</UploadDirectory>
+  <UploadFileSearchPatterns>*.jpeg</UploadFileSearchPatterns>
+  <PostUploadDelay>1</PostUploadDelay>
+  <EncryptBeforeUploading>True</EncryptBeforeUploading>
+</UploadAttachment>
